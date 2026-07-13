@@ -18,18 +18,19 @@
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@800&family=Shippori+Mincho+B1:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html">Daisuke Furuta</a>
+    <a class="brand" href="index.html"><span class="brand-df">DF</span>Daisuke Furuta</a>
     <nav class="site-nav">
       <a href="index.html#about">About</a>
       <a href="index.html#articles">Articles</a>
       <a href="index.html#media">Media</a>
       <a href="index.html#books">Books</a>
+      <a href="index.html#newsletter">Newsletter</a>
       <a href="index.html#contact" class="nav-contact">Contact</a>
     </nav>
   </div>
@@ -40,17 +41,19 @@
     <img class="hero-img" src="assets/hero-wide.jpg" alt="登壇し、聴衆に語りかける古田大輔">
     <div class="hero-overlay">
       <p class="hero-eyebrow">JOURNALIST / FACT-CHECKER</p>
-      <h1 class="hero-name">Daisuke Furuta</h1>
-      <p class="hero-kanji">古田大輔</p>
+      <h1 class="hero-name">Daisuke Furuta<span class="hero-kanji">古田大輔</span></h1>
     </div>
   </section>
 
-  <section class="container catch-sec">
+  <section class="container catch-sec" id="newsletter">
     <h2 class="hero-catch">分断の時代にこそ<br>共有されるべき<em>事実</em>を</h2>
-    <p class="hero-bio">伝統メディアからネット、そして、AIの時代に。情報環境の変遷を追いかけています。</p>
-    <div class="hero-actions">
-      <a class="btn" href="#articles">記事を読む</a>
-      <a class="link-arrow" href="#about">プロフィール ↓</a>
+    <div class="catch-nl">
+      <p class="catch-nl-label"><strong>COMMON FACT</strong>　毎週金曜、事実を共有する無料ニュースレター。</p>
+      <form class="catch-nl-form" action="https://daisukefuruta.substack.com/subscribe" method="get" target="_blank" rel="noopener">
+        <input type="email" name="email" placeholder="メールアドレス" required aria-label="メールアドレス">
+        <button type="submit">無料購読する</button>
+      </form>
+      <p class="catch-nl-note">Substackにて配信。いつでも解除できます。</p>
     </div>
   </section>
 

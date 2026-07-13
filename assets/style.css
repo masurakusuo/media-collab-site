@@ -31,18 +31,81 @@ a:hover { color: var(--accent); }
   border-bottom: 1px solid var(--line);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: 16px; flex-wrap: wrap; padding-top: 8px; padding-bottom: 8px; }
-.brand { font-family: var(--en); font-weight: 800; font-size: 16px; letter-spacing: .01em; }
+.brand { font-family: var(--en); font-weight: 800; font-size: 16px; letter-spacing: .01em; display: inline-flex; align-items: center; gap: 10px; }
+.brand:hover { color: var(--ink); }
+.brand-df {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 30px; height: 30px; border-radius: 7px; background: var(--ink); color: #fff;
+  font-family: "Poppins", var(--en); font-weight: 800; font-size: 15px; letter-spacing: .01em;
+}
 .site-nav { display: flex; gap: 26px; flex-wrap: wrap; align-items: center; }
 .site-nav a { font-family: var(--en); font-weight: 600; font-size: 13.5px; color: var(--ink-soft); }
 .site-nav a:hover { color: var(--ink); }
 .site-nav .nav-contact { border: 1.5px solid var(--ink); border-radius: 999px; padding: 6px 16px; color: var(--ink); }
 .site-nav .nav-contact:hover { background: var(--ink); color: #fff; }
+.site-nav .nav-cta { background: var(--accent); color: #fff; border-radius: 999px; padding: 6px 16px; font-weight: 700; }
+.site-nav .nav-cta:hover { background: #a82e24; color: #fff; }
+
+/* ---- newsletter section (Substack登録・1箇所) ---- */
+section[id] { scroll-margin-top: 88px; }
+.nl2 { background: var(--bg-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.nl2-inner { max-width: 640px; text-align: center; padding-top: 84px; padding-bottom: 84px; }
+.nl2-eyebrow { font-family: var(--en); font-weight: 600; font-size: 12px; letter-spacing: .3em; color: var(--accent); }
+.nl2-title { font-family: var(--en); font-weight: 800; font-size: clamp(28px, 4.2vw, 40px); letter-spacing: .01em; margin-top: 10px; }
+.nl2-title .nl2-dot { color: var(--accent); }
+.nl2-tag { font-family: var(--mincho); font-weight: 700; font-size: 17px; letter-spacing: .04em; margin: 14px 0 12px; }
+.nl2-pitch { color: var(--ink-soft); font-size: 14px; line-height: 1.9; margin: 0 auto 28px; max-width: 30em; }
+.nl2-form { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto; }
+.nl2-form input {
+  flex: 1 1 240px; min-width: 0; padding: 14px 16px; border-radius: 10px;
+  border: 1.5px solid var(--line); background: #fff; color: var(--ink);
+  font-size: 15px; font-family: var(--sans);
+}
+.nl2-form input:focus { outline: none; border-color: var(--accent); }
+.nl2-form button {
+  flex: 0 0 auto; padding: 14px 30px; border: none; border-radius: 10px;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: 15px;
+  font-family: var(--sans); cursor: pointer; transition: background .2s;
+}
+.nl2-form button:hover { background: #a82e24; }
+.nl2-note { font-size: 12px; color: var(--ink-faint); margin-top: 14px; }
+@media (max-width: 560px) { .nl2-form button { flex: 1 1 100%; } .nl2-inner { padding-top: 60px; padding-bottom: 60px; } }
+
+.nl-inner { display: flex; align-items: center; justify-content: space-between; gap: 56px; flex-wrap: wrap; padding-top: 72px; padding-bottom: 72px; }
+.nl-copy { flex: 1 1 380px; }
+.nl-eyebrow { font-family: var(--en); font-weight: 600; font-size: 12px; letter-spacing: .3em; color: #ff8a7d; margin-bottom: 14px; }
+.nl-title { font-family: var(--en); font-weight: 800; font-size: clamp(30px, 4.4vw, 46px); letter-spacing: .01em; color: #fff; line-height: 1; }
+.nl-title .nl-dot { color: var(--accent); }
+.nl-tag { font-family: var(--mincho); font-weight: 700; font-size: 17px; color: #fff; margin: 16px 0 14px; letter-spacing: .04em; }
+.nl-pitch { font-size: 14px; line-height: 1.9; color: #c7ccd1; }
+.nl-form { flex: 0 1 400px; }
+.nl-label { display: block; font-size: 12.5px; color: #aeb4ba; margin-bottom: 10px; font-weight: 500; }
+.nl-inputrow { display: flex; gap: 10px; flex-wrap: wrap; }
+.nl-inputrow input {
+  flex: 1 1 200px; min-width: 0; padding: 14px 16px; border-radius: 10px;
+  border: 1.5px solid #3a3d42; background: #232629; color: #fff;
+  font-size: 15px; font-family: var(--sans);
+}
+.nl-inputrow input::placeholder { color: #7d838a; }
+.nl-inputrow input:focus { outline: none; border-color: var(--accent); background: #2b2e31; }
+.nl-inputrow button {
+  flex: 0 0 auto; padding: 14px 28px; border: none; border-radius: 10px;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: 15px;
+  font-family: var(--sans); cursor: pointer; transition: background .2s;
+}
+.nl-inputrow button:hover { background: #e0473b; }
+.nl-note { font-size: 12px; color: #8b9097; margin-top: 12px; }
+@media (max-width: 640px) {
+  .nl-inner { gap: 32px; padding-top: 56px; padding-bottom: 56px; }
+  .nl-inputrow button { flex: 1 1 100%; }
+  section[id] { scroll-margin-top: 150px; }
+}
 
 /* ---- hero (フルブリード写真 + 左下ネーム) ---- */
 .hero { position: relative; width: 100%; overflow: hidden; }
 .hero-img {
   display: block; width: 100%;
-  height: min(88vh, 760px); object-fit: cover; object-position: center 30%;
+  height: min(72vh, 640px); object-fit: cover; object-position: center 46%;
 }
 .hero::after {
   content: ""; position: absolute; inset: 0;
@@ -61,15 +124,59 @@ a:hover { color: var(--accent); }
   font-family: var(--en); font-weight: 800; color: #fff;
   font-size: clamp(38px, 7.2vw, 84px); line-height: 1.05; letter-spacing: -0.01em;
 }
-.hero-kanji { font-size: clamp(13px, 1.5vw, 17px); letter-spacing: .5em; color: #fff; opacity: .8; margin-top: 14px; }
+.hero-kanji { display: inline-block; font-size: clamp(14px, 1.5vw, 19px); letter-spacing: .28em; color: #fff; opacity: .82; margin-left: 18px; font-weight: 400; white-space: nowrap; }
+
+/* hero内 ニュースレター登録フォーム */
+.hero-cta { margin-top: 30px; max-width: 540px; }
+.hero-cta-label { font-size: 14.5px; color: #fff; margin-bottom: 12px; font-weight: 500; text-shadow: 0 1px 10px rgba(0,0,0,.55); }
+.hero-cta-label strong { font-family: var(--en); font-weight: 800; letter-spacing: .02em; }
+.hero-form { display: flex; gap: 10px; flex-wrap: wrap; }
+.hero-form input {
+  flex: 1 1 250px; min-width: 0; padding: 14px 16px; border-radius: 10px;
+  border: 1.5px solid rgba(255,255,255,.4); background: rgba(12,14,18,.55);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  color: #fff; font-size: 15px; font-family: var(--sans);
+}
+.hero-form input::placeholder { color: #dfe3e7; }
+.hero-form input:focus { outline: none; border-color: var(--accent); background: rgba(12,14,18,.72); }
+.hero-form button {
+  flex: 0 0 auto; padding: 14px 30px; border: none; border-radius: 10px;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: 15px;
+  font-family: var(--sans); cursor: pointer; transition: background .2s;
+  box-shadow: 0 6px 20px rgba(199,58,46,.35);
+}
+.hero-form button:hover { background: #e0473b; }
+@media (max-width: 560px) {
+  .hero-cta { margin-top: 22px; max-width: none; }
+  .hero-form button { flex: 1 1 100%; }
+}
 
 /* ---- catch ---- */
-.catch-sec { padding-top: clamp(64px, 10vw, 110px); }
+.catch-sec { padding-top: clamp(34px, 4vw, 52px); padding-bottom: clamp(52px, 7vw, 84px); }
 .hero-catch {
   font-family: var(--mincho); font-weight: 800;
-  font-size: clamp(28px, 5.6vw, 56px); line-height: 1.6; letter-spacing: .04em;
-  margin-bottom: 30px; max-width: 21em;
+  font-size: clamp(26px, 4.6vw, 48px); line-height: 1.5; letter-spacing: .04em;
+  margin-bottom: 22px; max-width: 21em;
 }
+/* catch内 ニュースレター登録フォーム */
+.catch-nl { max-width: 560px; }
+.catch-nl-label { font-size: 14.5px; color: var(--ink-soft); margin-bottom: 14px; }
+.catch-nl-label strong { font-family: var(--en); font-weight: 800; color: var(--ink); letter-spacing: .02em; }
+.catch-nl-form { display: flex; gap: 10px; flex-wrap: wrap; }
+.catch-nl-form input {
+  flex: 1 1 240px; min-width: 0; padding: 14px 16px; border-radius: 10px;
+  border: 1.5px solid var(--line); background: #fff; color: var(--ink);
+  font-size: 15px; font-family: var(--sans);
+}
+.catch-nl-form input:focus { outline: none; border-color: var(--accent); }
+.catch-nl-form button {
+  flex: 0 0 auto; padding: 14px 30px; border: none; border-radius: 10px;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: 15px;
+  font-family: var(--sans); cursor: pointer; transition: background .2s;
+}
+.catch-nl-form button:hover { background: #a82e24; }
+.catch-nl-note { font-size: 12px; color: var(--ink-faint); margin-top: 12px; }
+@media (max-width: 560px) { .catch-nl-form button { flex: 1 1 100%; } }
 .hero-catch em { font-style: normal; position: relative; }
 .hero-catch em::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: .08em;
@@ -198,7 +305,7 @@ a:hover { color: var(--accent); }
 }
 @media (max-width: 860px) {
   .section-pad { padding-top: 68px; padding-bottom: 68px; }
-  .hero-img { height: min(70vh, 560px); }
+  .hero-img { height: min(46vh, 420px); }
   .header-inner { justify-content: center; text-align: center; }
   .site-nav { justify-content: center; gap: 16px; }
   .media-cols { gap: 28px; }
@@ -206,8 +313,10 @@ a:hover { color: var(--accent); }
 @media (max-width: 560px) {
   body { font-size: 15px; }
   .container { padding: 0 20px; }
-  .hero-img { height: 62vh; min-height: 380px; }
-  .hero-overlay { left: 20px; right: 20px; bottom: 22px; }
+  .hero-img { height: 40vh; min-height: 300px; }
+  .hero-overlay { left: 20px; right: 20px; bottom: 20px; }
+  .hero-name { font-size: 27px; letter-spacing: 0; line-height: 1.1; }
+  .hero-kanji { font-size: 14px; margin-left: 12px; letter-spacing: .2em; }
   .site-nav a { font-size: 12.5px; }
   .site-nav .nav-contact { padding: 4px 12px; }
   .idx-item { flex-direction: column; gap: 6px; padding: 20px 2px; }
