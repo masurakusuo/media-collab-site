@@ -31,12 +31,13 @@ a:hover { color: var(--accent); }
   border-bottom: 1px solid var(--line);
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: 16px; flex-wrap: wrap; padding-top: 8px; padding-bottom: 8px; }
-.brand { font-family: var(--en); font-weight: 800; font-size: 16px; letter-spacing: .01em; display: inline-flex; align-items: center; gap: 10px; }
+.brand { font-family: var(--en); font-weight: 800; font-size: 16px; letter-spacing: .01em; display: inline-flex; align-items: center; gap: 16px; }
 .brand:hover { color: var(--ink); }
 .brand-df {
   display: inline-flex; align-items: center; justify-content: center;
-  width: 30px; height: 30px; border-radius: 7px; background: var(--ink); color: #fff;
-  font-family: "Poppins", var(--en); font-weight: 800; font-size: 15px; letter-spacing: .01em;
+  width: 32px; height: 32px; border-radius: 8px;
+  border: 2.5px solid var(--ink); background: transparent; color: var(--ink);
+  font-family: "Poppins", var(--en); font-weight: 800; font-size: 13px; letter-spacing: .01em;
 }
 .site-nav { display: flex; gap: 26px; flex-wrap: wrap; align-items: center; }
 .site-nav a { font-family: var(--en); font-weight: 600; font-size: 13.5px; color: var(--ink-soft); }
@@ -160,23 +161,23 @@ section[id] { scroll-margin-top: 88px; }
 }
 /* catch内 ニュースレター登録フォーム */
 .catch-nl { max-width: 560px; }
-.catch-nl-label { font-size: 14.5px; color: var(--ink-soft); margin-bottom: 14px; }
+.catch-nl-label { font-size: 14.5px; color: var(--ink-soft); margin-bottom: 16px; }
 .catch-nl-label strong { font-family: var(--en); font-weight: 800; color: var(--ink); letter-spacing: .02em; }
-.catch-nl-form { display: flex; gap: 10px; flex-wrap: wrap; }
+.catch-nl-form { display: flex; flex-direction: column; gap: 12px; max-width: 460px; }
 .catch-nl-form input {
-  flex: 1 1 240px; min-width: 0; padding: 14px 16px; border-radius: 10px;
+  width: 100%; padding: 16px 18px; border-radius: 10px;
   border: 1.5px solid var(--line); background: #fff; color: var(--ink);
-  font-size: 15px; font-family: var(--sans);
+  font-size: 16px; font-family: var(--sans);
 }
-.catch-nl-form input:focus { outline: none; border-color: var(--accent); }
+.catch-nl-form input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(199,58,46,.12); }
 .catch-nl-form button {
-  flex: 0 0 auto; padding: 14px 30px; border: none; border-radius: 10px;
-  background: var(--accent); color: #fff; font-weight: 700; font-size: 15px;
+  width: 100%; padding: 16px; border: none; border-radius: 10px;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: 16px;
   font-family: var(--sans); cursor: pointer; transition: background .2s;
+  box-shadow: 0 8px 20px rgba(199,58,46,.28);
 }
 .catch-nl-form button:hover { background: #a82e24; }
-.catch-nl-note { font-size: 12px; color: var(--ink-faint); margin-top: 12px; }
-@media (max-width: 560px) { .catch-nl-form button { flex: 1 1 100%; } }
+.catch-nl-note { font-size: 11px; color: #a6acb2; margin-top: 12px; }
 .hero-catch em { font-style: normal; position: relative; }
 .hero-catch em::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: .08em;
