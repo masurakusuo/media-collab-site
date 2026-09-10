@@ -335,30 +335,31 @@ section[id] { scroll-margin-top: 88px; }
 .cf-band .sec-en { color: #ff8a7d; }
 .cf-band .sec-jp { color: #fff; }
 .cf-band .sec-head { margin-bottom: 26px; }
-.cf-lead { color: #c7ccd1; font-size: 14.5px; line-height: 1.95; max-width: 640px; margin-bottom: 44px; }
+.cf-lead { color: #c7ccd1; font-size: 14.5px; line-height: 1.95; max-width: 640px; margin-bottom: 40px; }
 
-.cf-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
 .cf-link {
-  display: flex; align-items: center; gap: 20px;
-  padding: 30px 28px; border-radius: 4px;
-  background: #232629; border: 1px solid #34383c;
-  transition: background .18s ease, border-color .18s ease, transform .18s ease;
+  display: flex; align-items: center; gap: 18px;
+  margin-bottom: 18px; padding: 20px 24px;
+  border: 1.5px solid var(--accent); border-radius: 10px;
+  background: rgba(199,58,46,.12);
+  transition: background .18s ease;
 }
-.cf-link:hover { background: #2b2e31; border-color: var(--accent); transform: translateY(-2px); }
+.cf-link:last-child { margin-bottom: 0; }
+.cf-link:hover { background: var(--accent); }
 .cf-verb {
   flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center;
-  width: 58px; height: 58px; border-radius: 50%;
+  min-width: 62px; padding: 5px 14px; border-radius: 999px;
   background: var(--accent); color: #fff;
-  font-family: var(--mincho); font-weight: 800; font-size: 19px; letter-spacing: .04em;
+  font-family: var(--mincho); font-weight: 800; font-size: 15px; letter-spacing: .08em;
 }
-.cf-link:hover .cf-verb { background: #e0473b; }
-.cf-name { flex: 1 1 auto; color: #fff; font-size: 17px; font-weight: 700; letter-spacing: .04em; line-height: 1.5; }
+.cf-link:hover .cf-verb { background: #fff; color: var(--accent); }
+.cf-name { flex: 1 1 auto; color: #fff; font-size: 16px; font-weight: 700; letter-spacing: .04em; line-height: 1.5; }
 .cf-name em { font-family: var(--en); font-style: normal; font-weight: 800; letter-spacing: .01em; }
-.cf-arrow { flex: 0 0 auto; color: var(--accent); font-size: 20px; font-weight: 700; transition: transform .18s ease; }
-.cf-link:hover .cf-arrow { transform: translateX(4px); }
+.cf-arrow { flex: 0 0 auto; color: var(--accent); font-size: 19px; font-weight: 800; transition: transform .18s ease; }
+.cf-link:hover .cf-arrow { color: #fff; transform: translateX(4px); }
 
 @media (max-width: 560px) {
-  .cf-link { padding: 24px 20px; gap: 16px; }
-  .cf-verb { width: 50px; height: 50px; font-size: 17px; }
-  .cf-name { font-size: 15.5px; }
+  .cf-link { padding: 18px 18px; gap: 14px; }
+  .cf-verb { min-width: 54px; font-size: 14px; }
+  .cf-name { font-size: 14.5px; }
 }
