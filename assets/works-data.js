@@ -16,6 +16,7 @@
  */
 window.WORKS_PROFILES = [
   { name: "日本ファクトチェックセンター（JFC）", url: "https://www.factcheckcenter.jp/author/daisuke/" },
+  { name: "COMMON FACT（ニュースレター・Podcast）", url: "https://daisukefuruta.substack.com/" },
   { name: "note", url: "https://note.com/masurakusuo" },
   { name: "BuzzFeed Japan", url: "https://www.buzzfeed.com/jp/daisukefuruta" },
   { name: "Yahoo!ニュース エキスパート", url: "https://news.yahoo.co.jp/expert/authors/furutadaisuke" }
@@ -80,6 +81,19 @@ var FC = "ファクトチェック・リテラシー", DM = "デジタルメデ�
     PE = "政治・選挙", CA = "キャリア", ETC = "国際・社会ほか";
 
 window.WORKS = [
+  // ---- 追加分（2026-10 Web調査） ----
+  { date: "2026-06-25", title: "ファクトチェックとリテラシー ～偽情報に惑わされないために～（定例講演会）", media: "神奈川政経懇話会", type: "登壇・講演", theme: FC, tags: ["偽情報", "選挙", "SNS"], url: "https://www.kanagawa-seikon.jp/news/archives/6715" },
+  { date: "2025-12-26", title: "その情報、本当に正しい？ 真偽見抜くコツは ファクトチェックセンター古田編集長に聞く「ソーシャルメディアの理解も必要」", media: "北海道新聞", type: "インタビュー", theme: FC, tags: ["メディアリテラシー", "SNS", "生成AI"], url: "https://www.hokkaido-np.co.jp/article/1257564/" },
+  { date: "2025-10-23", title: "人の脳は自分の価値観を肯定する情報を正しいと判断しがち…拡散された偽情報を見分けるには？（政経懇話会 第508回10月例会）", media: "福井新聞", type: "登壇・講演", theme: FC, tags: ["偽情報", "メディアリテラシー"], url: "https://www.fukuishimbun.co.jp/articles/-/2440200" },
+  { date: "2025-10-19", title: "市民公開講座「信頼できる健康情報の見つけ方 ―なぜ健康に関する誤情報は広がるのか―」", media: "DIA日本年会2025", type: "登壇・講演", theme: FC, tags: ["健康情報", "偽情報"], url: "https://www.diaglobal.org/en/conference-listing/meetings/2025/10/the-22nd-dia-japan-annual-meeting-2025/agenda/19/public-lecturer-how-to-find-reliable-health-information-why-is-health-misinformation-so-widespread" },
+  { date: "2025-09-24", title: "「あふれる偽・誤情報に警戒心持って」熊日情報文化懇話会 9月例会で講演", media: "熊本日日新聞", type: "登壇・講演", theme: FC, tags: ["偽情報"], url: "https://kumanichi.com/articles/1901149" },
+  { date: "2025-07-16", title: "第1回人権講演会「ファクトチェックとリテラシー ―フェイクとヘイトに飲み込まれないために―」", media: "静岡県", type: "登壇・講演", theme: FC, tags: ["偽情報", "誹謗中傷"], url: "https://www.pref.shizuoka.jp/kurashikankyo/jinkennpo/1002893/1074795.html", note: "動画配信：2025年7月16日〜8月5日" },
+  { date: "2025-07", title: "SPF・DSET・SIA/JFC 情報セキュリティシンポジウム「台湾の市民社会による情報脅威への対応」（パネル司会）", media: "笹川平和財団", type: "登壇・講演", theme: FC, tags: ["国際会議", "影響工作", "国際"], url: "https://www.spf.org/en/seminar/list/20250711.html" },
+  { date: "2025-06-15", title: "講演会「“フェイクニュース”の見抜き方」", media: "豊岡アートアクション", type: "登壇・講演", theme: FC, tags: ["偽情報", "メディアリテラシー"], url: "https://www.city.toyooka.lg.jp/kurashi/1007000/1029006/1033512.html" },
+  { date: "2025-05-23", title: "政経懇話会 第584回例会", media: "愛媛新聞", type: "登壇・講演", theme: FC, tags: ["偽情報"], url: "https://www.ehime-np.co.jp/article/news202505210135", note: "リンク先は開催告知" },
+  { date: "2025-02-06", title: "基調講演「生成AIとフェイクニュース」", media: "コンピュータソフトウェア著作権協会（ACCS）", type: "登壇・講演", theme: FC, tags: ["生成AI", "偽情報"], url: "https://www2.accsjp.or.jp/activities/2024/news177.php" },
+  { date: "2024-01-26", title: "Navigating the Digital Era: The Growing Importance of Fact-Checking", media: "KIZUNA（政府広報）", type: "インタビュー", theme: FC, tags: ["ファクトチェック", "国際"], url: "https://www.japan.go.jp/kizuna/2024/01/growing_importance_of_fact-checking.html", note: "英語" },
+  { date: "2022-11", title: "世代に共通する課題と異なる対策（ICT活用のためのリテラシー向上に関する検討会 発表資料）", media: "総務省", type: "登壇・講演", theme: FC, tags: ["メディアリテラシー"], url: "https://www.soumu.go.jp/main_content/000849711.pdf", note: "PDF。開催回は要確認（検討会は2022年11月開始）" },
   // ---- 2026 ----
   { date: "2026-07", title: "Voters 92号", media: "明るい選挙推進協会", type: "寄稿", theme: PE, tags: ["選挙"], url: "https://www.akaruisenkyo.or.jp/061mag/11641/" },
   { date: "2026-06", title: "辞めマスコミ本音座談会！どうなる？マスメディアの未来【ReHacQ生配信】", media: "ReHacQ", type: "YouTube・Podcast", theme: DM, tags: ["マスメディア"], url: "https://www.youtube.com/watch?v=OPGzdWsRoe0" },
