@@ -1,8 +1,8 @@
 /* 登壇・出演・寄稿 一覧：分野・種別・媒体・キーワードで絞り込み */
 (function () {
   var ALL = "すべて";
-  var TYPE_ORDER = ["寄稿", "インタビュー", "登壇・講演", "テレビ・ラジオ", "記事"];
-  var MIN_TAG = 2; // この件数以上あるキーワードだけをタグ一覧に出す
+  var TYPE_ORDER = ["寄稿", "インタビュー", "登壇・講演", "テレビ・ラジオ", "YouTube・Podcast", "記者として執筆", "調査・監修"];
+  var MIN_TAG = 4; // この件数以上あるキーワードだけをタグ一覧に出す
 
   var works = (window.WORKS || []).slice().sort(function (a, b) {
     return a.date < b.date ? 1 : a.date > b.date ? -1 : 0;
@@ -90,6 +90,35 @@
       });
   }
 
+  /* ---- 媒体別のプロフィールページ ---- */
+  function renderProfiles() {
+    var box = $("w-profiles"); if (!box) return;
+    (window.WORKS_PROFILES || []).forEach(function (p) {
+      var a = el("a", "w-profile", p.name); a.href = p.url; a.target = "_blank"; a.rel = "noopener";
+      box.appendChild(a);
+    });
+  }
+
+  /* ---- 分野ごとの「主な記事」 ---- */
+  function renderPicks() {
+    var box = $("w-picks"); box.innerHTML = "";
+    var cur = themes.filter(function (th) { return th.name === state.theme; })[0];
+    var picks = cur && cur.picks ? cur.picks : [];
+    box.hidden = !picks.length;
+    if (!picks.length) return;
+    box.appendChild(el("h4", "w-picks-head", "主な記事"));
+    var ul = el("ul", "w-picks-list");
+    picks.forEach(function (p) {
+      var li = el("li", "w-pick");
+      var a = el("a", "w-pick-title", p.title); a.href = p.url; a.target = "_blank"; a.rel = "noopener";
+      li.appendChild(a);
+      if (p.media) li.appendChild(el("span", "w-pick-media", p.media));
+      if (p.desc) li.appendChild(el("p", "w-pick-desc", p.desc));
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+  }
+
   /* ---- 一覧 ---- */
   function match(w) {
     if (state.theme !== ALL && w.theme !== state.theme) return false;
@@ -151,7 +180,7 @@
     writeHash();
     render();
   }
-  function render() { renderFilters(); renderList(); }
+  function render() { renderFilters(); renderPicks(); renderList(); }
 
   $("w-q").addEventListener("input", function (e) { state.q = e.target.value.trim(); renderList(); });
   $("w-reset").addEventListener("click", function () {
@@ -159,6 +188,7 @@
     $("w-q").value = ""; writeHash(); render();
   });
 
+  renderProfiles();
   readHash();
   render();
 })();
