@@ -82,6 +82,13 @@ var FC = "ファクトチェック・リテラシー", DM = "デジタルメデ�
 
 window.WORKS = [
   // ---- 追加分（2026-10-27 月末チェック初回） ----
+  { date: "2026-10-24", title: "早稲田大学キャリア・リカレント・カレッジ「デジタル時代のリテラシー」", media: "WASEDA NEO", type: "登壇・講演", theme: FC, tags: ["メディアリテラシー", "大学"], url: "https://wasedaneo.jp/service/certificate-programs/career-recurrent-college/teacher/" },
+  { date: "2026-10-22", title: "「偽情報を見抜けたのは、わずか14.5%」ファクトチェッカー・古田大輔氏が語る（Why So Good? ゲスト出演）", media: "interfm／まぐまぐ", type: "テレビ・ラジオ", theme: FC, tags: ["偽情報", "メディアリテラシー"], url: "https://www.mag2.com/p/news/687617", note: "番組告知：PR TIMES" },
+  { date: "2026-10-12", title: "マイあさ！祝日特集「シェアする前にちょっとマテオ！ 陰謀論はなぜ広がるのか」", media: "NHKラジオ", type: "テレビ・ラジオ", theme: FC, tags: ["陰謀論", "偽情報"], url: "https://x.com/nhk_radio_news/status/2109403262923534567", note: "リンク先はNHKラジオニュースの告知" },
+  { date: "2026-10-09", title: "PR TIMESカレッジ Vol.11 名古屋会場 ワークショップ講師", media: "PR TIMES", type: "登壇・講演", theme: FC, tags: ["企業広報"], url: "https://prtimes.jp/main/html/rd/p/000001700.000000112.html" },
+  { date: "2026-09-29", title: "批判的思考と吟味を 古田氏「偽情報」対策伝授（千葉政経懇話会 9月例会「偽情報に惑わされないために」）", media: "千葉日報", type: "登壇・講演", theme: FC, tags: ["偽情報"], url: "https://www.chibanippo.co.jp/articles/1672741", note: "開催告知：千葉日報" },
+  { date: "2026-09-28", title: "生成AI時代の情報発信 ― AIの回答に、根拠と差を（基調講演）", media: "日本経済新聞社（NIKKEI KAI）", type: "登壇・講演", theme: FC, tags: ["生成AI", "企業広報"], url: "https://prtimes.jp/main/html/rd/p/000000660.000011115.html" },
+  { date: "2026-07", title: "政治、お金、健康……その情報、信じて大丈夫？「情報リテラシー」を、今こそ高めよう！【古田大輔さん×小倉弘子さん 対談】", media: "Web eclat（集英社）", type: "インタビュー", theme: FC, tags: ["メディアリテラシー"], url: "https://eclat.hpplus.jp/lifestyle/50s-worry/204088/", note: "前編。後編あり" },
   { date: "2026-02-26", title: "万博コスプレ騒動後…コミュニティノートで批判やまず？ AI爆誕でファクトチェックは激ムズに？", media: "ABEMA Prime（アベプラ）", type: "テレビ・ラジオ", theme: FC, tags: ["SNS", "生成AI", "ファクトチェック", "プラットフォーム"], url: "https://www.youtube.com/watch?v=Y6TodWpQQ7c" },
   { date: "2025-02-04", title: "【選挙とデマ】選挙でデマが広がるワケ／兵庫県知事選をめぐる問題／日本はファクトチェックが足りない／デマから身を守る方法", media: "選挙ドットコムちゃんねる", type: "YouTube・Podcast", theme: PE, tags: ["選挙", "偽情報", "ファクトチェック"], url: "https://www.youtube.com/watch?v=sNYn6P6788E" },
   { date: "2024-11-27", title: "【対談】「インターネットで世界は良くなる」の次へ ―― 偽情報時代のメディアリテラシー", media: "株式会社JADE", type: "インタビュー", theme: FC, tags: ["メディアリテラシー", "偽情報"], url: "https://blog.ja.dev/entry/blog/2024/11/27/interview-media-literacy-misinformation-era" },
