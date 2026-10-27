@@ -81,6 +81,11 @@ var FC = "ファクトチェック・リテラシー", DM = "デジタルメデ�
     PE = "政治・選挙", CA = "キャリア", ETC = "国際・社会ほか";
 
 window.WORKS = [
+  // ---- 追加分（2026-10-27 月末チェック初回） ----
+  { date: "2026-02-26", title: "万博コスプレ騒動後…コミュニティノートで批判やまず？ AI爆誕でファクトチェックは激ムズに？", media: "ABEMA Prime（アベプラ）", type: "テレビ・ラジオ", theme: FC, tags: ["SNS", "生成AI", "ファクトチェック", "プラットフォーム"], url: "https://www.youtube.com/watch?v=Y6TodWpQQ7c" },
+  { date: "2025-02-04", title: "【選挙とデマ】選挙でデマが広がるワケ／兵庫県知事選をめぐる問題／日本はファクトチェックが足りない／デマから身を守る方法", media: "選挙ドットコムちゃんねる", type: "YouTube・Podcast", theme: PE, tags: ["選挙", "偽情報", "ファクトチェック"], url: "https://www.youtube.com/watch?v=sNYn6P6788E" },
+  { date: "2024-11-27", title: "【対談】「インターネットで世界は良くなる」の次へ ―― 偽情報時代のメディアリテラシー", media: "株式会社JADE", type: "インタビュー", theme: FC, tags: ["メディアリテラシー", "偽情報"], url: "https://blog.ja.dev/entry/blog/2024/11/27/interview-media-literacy-misinformation-era" },
+  { date: "2022-10-04", title: "偽情報・誤情報対策の専門機関が設立 古田大輔編集長にJFC設立の経緯と今後の展開を聞く", media: "ポリタスTV", type: "YouTube・Podcast", theme: FC, tags: ["ファクトチェック"], url: "https://www.youtube.com/watch?v=fjHdri-Ldy4" },
   // ---- 追加分（2026-10 Web調査） ----
   { date: "2026-06-25", title: "ファクトチェックとリテラシー ～偽情報に惑わされないために～（定例講演会）", media: "神奈川政経懇話会", type: "登壇・講演", theme: FC, tags: ["偽情報", "選挙", "SNS"], url: "https://www.kanagawa-seikon.jp/news/archives/6715" },
   { date: "2025-12-26", title: "その情報、本当に正しい？ 真偽見抜くコツは ファクトチェックセンター古田編集長に聞く「ソーシャルメディアの理解も必要」", media: "北海道新聞", type: "インタビュー", theme: FC, tags: ["メディアリテラシー", "SNS", "生成AI"], url: "https://www.hokkaido-np.co.jp/article/1257564/" },
