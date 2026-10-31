@@ -81,6 +81,8 @@ var FC = "ファクトチェック・リテラシー", DM = "デジタルメデ�
     PE = "政治・選挙", CA = "キャリア", ETC = "国際・社会ほか";
 
 window.WORKS = [
+  // ---- 追加分（2026-10-31 月末更新） ----
+  { date: "2026-08-03", title: "NHKラジオ「ノリコとマテオ シェアする前のリテラシー」推しが熱愛？ 許せない！ちょっと待って！の巻（再放送）", media: "NHKラジオ", type: "テレビ・ラジオ", theme: FC, tags: ["メディアリテラシー", "SNS", "偽情報"], url: "https://x.com/nhk_radio_news/status/2084055209589006579", note: "リンク先はNHKラジオニュースの再放送告知。番組紹介：WEBザテレビジョン https://thetv.jp/news/detail/1394930/" },
   // ---- 追加分（2026-10-27 月末チェック初回） ----
   { date: "2026-10-24", title: "早稲田大学キャリア・リカレント・カレッジ「デジタル時代のリテラシー」", media: "WASEDA NEO", type: "登壇・講演", theme: FC, tags: ["メディアリテラシー", "大学"], url: "https://wasedaneo.jp/service/certificate-programs/career-recurrent-college/teacher/" },
   { date: "2026-10-22", title: "「偽情報を見抜けたのは、わずか14.5%」ファクトチェッカー・古田大輔氏が語る（Why So Good? ゲスト出演）", media: "interfm／まぐまぐ", type: "テレビ・ラジオ", theme: FC, tags: ["偽情報", "メディアリテラシー"], url: "https://www.mag2.com/p/news/687617", note: "番組告知：PR TIMES" },
